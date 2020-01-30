@@ -55,10 +55,10 @@ ax.set_xticklabels(label_list)
 ax.legend()
 
 for x,y in zip(x,top10men_number):
-    plt.text(x-0.2,y+0.001,top10men_name[x-1], ha='center', va='bottom')
+    plt.text(x-0.2,y+0.001,top10men_name[x], ha='center', va='bottom')
 x = np.arange(len(label_list))
 for x,y in zip(x,top10women_number):
-    plt.text(x+0.2,y+0.001,top10women_name[x-1], ha='center', va='bottom')
+    plt.text(x+0.2,y+0.001,top10women_name[x], ha='center', va='bottom')
 
 fig.tight_layout()
 plt.show()
